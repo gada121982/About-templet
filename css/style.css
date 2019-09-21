@@ -585,55 +585,89 @@ header .content-header{
 
 .resume{
     min-height: 80vh;
-    background-color : rgb(36, 44, 44);
+    background-color : rgba(242, 248, 248, 0.5) ;
     width: 70%;
     margin: 0 auto;
+    padding-bottom: 5%;
     display: flex ; 
     position: relative;
     border-radius: 10px;
+    box-shadow : 3px 3px 20px 1px rgba(119, 118, 118, 0.52)
 }
 .resume::before{
     content: 'Resume' ; 
     position: absolute;
-    top: 5%;  
+    top: 2%;  
     left: -1%; 
-    background-color : rgb(223, 223, 54) ;
-    height : 7%; 
-    width: 20%;
+    background-color : rgb(2, 2, 2) ;
+    height : 5%; 
+    width: 18%;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
     text-align: center;
     padding-top: 1%;
-    color : rgb(0, 0, 0);
+    color : rgb(255, 249, 249);
     font-weight: 700;
     letter-spacing: 2px;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    letter-spacing: 4px; 
 }
+
 .resume::after{
    content: '';
     position: absolute;
-    top: 13.5%;  
+    top: 8.5%;  
     left: -1%; 
-    background-color : rgb(156, 147, 18) ;
+    background-color : rgb(2, 2, 2) ;
     height : 2%; 
     width: 1%;
     clip-path: polygon(100% 0, 0 0, 100% 100%);
     
-}
+}   
 .education{
     width: 50%;
     height: 70vh ;
-   
     margin-top: 15%;
     display: flex; 
     flex-direction: column ; 
     justify-content: space-around;
     align-items: center;
+    position: relative ; 
+   
+}
+.education::before{
+    content: 'Education' ; 
+    position: absolute;
+    top: -10% ; 
+    left: 40% ; 
+    font-size: 1.5rem ;
+    letter-spacing: 2px;
+    font-weight: 600 ;
+
+}
+.education::after{
+    content: url('../img/education-icon.png') ; 
+    position: absolute;
+    top: -11% ; 
+    left: 30% ; 
+    font-size: 1.5rem ;
+    letter-spacing: 2px;
+    font-weight: 600 ;
     
 }
 .education .ston1{
-    background-color: red; 
+   
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
     height: 23vh;
+    width: 40%;
     position: relative;
+    color : rgb(119, 116, 116) ;
+    /* border-left: 2px solid rgb(72, 117, 117) ; */
+    -webkit-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+   
 }
 .education .ston1:before{
 
@@ -643,14 +677,49 @@ header .content-header{
     left: -3%;
     height: 10%;
     width: 35%;
-    background-color: rgb(4, 219, 226); 
+    background-color: rgb(250, 6, 6); 
+    color : rgb(250, 250, 250) ;
+    transform: translateX(-10%) ;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500 ; 
+    letter-spacing: 2px;
+}
+.education .ston1:after{
+    content: '' ; 
+    position: absolute;
+    top: 15%; 
+    left: -6%;
+    height: 5%;
+    width: 6%;
+    background-color: rgb(107, 3, 3); 
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    transform: translateX(-10%) ;
     
+}
+.education .ston1 h6{
+    font-size: 1rem ;
+    margin-left: 5%;
+    color : rgb(44, 43, 43) ;
+}
+.education .ston1 p{
+    margin-left: 5%;
 }
 
 .education .ston2{
-    background-color: rgb(37, 224, 62); 
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
     height: 23vh;
+    width: 40%;
     position: relative;
+    color : rgb(119, 116, 116) ;
+    
+    -webkit-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
 }
 .education .ston2:before{
 
@@ -660,34 +729,294 @@ header .content-header{
     left: -3%;
     height: 10%;
     width: 35%;
-    background-color: rgb(128, 162, 163); 
+    background-color: rgb(18, 181, 187); 
+    color : rgb(250, 250, 250) ;
+    transform: translateX(-10%) ;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500 ; 
+    letter-spacing: 2px;
+}
+.education .ston2:after{
+    content: '' ; 
+    position: absolute;
+    top: 15%; 
+    left: -6%;
+    height: 5%;
+    width: 6%;
+    background-color: rgb(4, 67, 78); 
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    transform: translateX(-10%) ;
     
+}
+.education .ston2 h6{
+    font-size: 1rem ;
+    color : rgb(44, 43, 43) ;
+}
+.education .ston2 h6{
+    font-size: 1rem ;
+    margin-left: 5%;
+}
+.education .ston2 p{
+    margin-left: 5%;
+}
+
+
+
+.education .ston3{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    height: 23vh;
+    width: 40%;
+    position: relative;
+    color : rgb(119, 116, 116) ;
+    /* border-left: 2px solid rgb(72, 117, 117) ; */
+    -webkit-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
 }
 .education .ston3:before{
 
-    content: '2018' ; 
+    content: 'Now' ; 
     position: absolute;
     top: 5%; 
     left: -3%;
     height: 10%;
     width: 35%;
-    background-color: rgb(4, 226, 115); 
+    background-color: rgb(11, 196, 20); 
+    color : rgb(250, 250, 250) ;
+    transform: translateX(-10%) ;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500 ; 
+    letter-spacing: 2px;
     
 }
-
-.education .ston3{
-    background-color: rgb(133, 204, 216); 
-    height: 23vh;
-    position: relative;
+.education .ston3:after{
+    content: '' ; 
+    position: absolute;
+    top: 15%; 
+    left: -6%;
+    height: 5%;
+    width: 6%;
+    background-color: rgb(5, 68, 3); 
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    transform: translateX(-10%) ;
+    
 }
-
+.education .ston3 h6{
+    font-size: 1rem ;
+    margin-left: 5%;
+    color : rgb(44, 43, 43) ;
+}
+.education .ston3 p{
+    margin-left: 5%;
+}
+/*NOTE exper */
 .experience{
     width: 50%;
     height: 70vh ;
-    background-color : rgb(105, 241, 241) ;
     margin-top: 15%;
     display: flex; 
     flex-direction: column ; 
     justify-content: space-around;
     align-items: center;
+    position: relative ; 
+   
+}
+.experience::before{
+    content: 'Experience' ; 
+    position: absolute;
+    top: -10% ; 
+    left: 40% ; 
+    font-size: 1.5rem ;
+    letter-spacing: 2px;
+    font-weight: 600 ;
+
+}
+.experience::after{
+    content: url('../img/skills-icon.png') ; 
+    position: absolute;
+    top: -11% ; 
+    left: 30% ; 
+    font-size: 1.5rem ;
+    letter-spacing: 2px;
+    font-weight: 600 ;
+    
+}
+.experience .ston1{
+   
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    height: 23vh;
+    width: 40%;
+    position: relative;
+    color : rgb(119, 116, 116) ;
+    /* border-left: 2px solid rgb(72, 117, 117) ; */
+    -webkit-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+   
+}
+.experience .ston1:before{
+
+    content: '2017' ; 
+    position: absolute;
+    top: 5%; 
+    left: -3%;
+    height: 10%;
+    width: 35%;
+    background-color: rgb(247, 184, 14); 
+    color : rgb(250, 250, 250) ;
+    transform: translateX(-10%) ;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500 ; 
+    letter-spacing: 2px;
+}
+.experience .ston1:after{
+    content: '' ; 
+    position: absolute;
+    top: 15%; 
+    left: -6%;
+    height: 5%;
+    width: 6%;
+    background-color: rgb(165, 69, 5); 
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    transform: translateX(-10%) ;
+    
+}
+.experience .ston1 h6{
+    font-size: 1rem ;
+    margin-left: 5%;
+    color : rgb(44, 43, 43) ;
+}
+.experience .ston1 p{
+    margin-left: 5%;
+}
+
+.experience .ston2{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    height: 23vh;
+    width: 40%;
+    position: relative;
+    color : rgb(119, 116, 116) ;
+    
+    -webkit-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+}
+.experience .ston2:before{
+
+    content: '2019' ; 
+    position: absolute;
+    top: 5%; 
+    left: -3%;
+    height: 10%;
+    width: 35%;
+    background-color: rgb(96, 207, 207); 
+    color : rgb(250, 250, 250) ;
+    transform: translateX(-10%) ;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500 ; 
+    letter-spacing: 2px;
+}
+.experience .ston2:after{
+    content: '' ; 
+    position: absolute;
+    top: 15%; 
+    left: -6%;
+    height: 5%;
+    width: 6%;
+    background-color: rgb(6, 56, 65); 
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    transform: translateX(-10%) ;
+    
+}
+.experience .ston2 h6{
+    font-size: 1rem ;
+    color : rgb(44, 43, 43) ;
+}
+.experience .ston2 h6{
+    font-size: 1rem ;
+    margin-left: 5%;
+}
+.experience .ston2 p{
+    margin-left: 5%;
+}
+
+
+
+.experience .ston3{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    height: 23vh;
+    width: 40%;
+    position: relative;
+    color : rgb(119, 116, 116) ;
+    /* border-left: 2px solid rgb(72, 117, 117) ; */
+    -webkit-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: -3px 1px 8px -3px rgba(0,0,0,0.75);
+}
+.experience .ston3:before{
+
+    content: 'Now' ; 
+    position: absolute;
+    top: 5%; 
+    left: -3%;
+    height: 10%;
+    width: 35%;
+    background-color: rgb(6, 247, 18); 
+    color : rgb(250, 250, 250) ;
+    transform: translateX(-10%) ;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500 ; 
+    letter-spacing: 2px;
+    
+}
+.experience .ston3:after{
+    content: '' ; 
+    position: absolute;
+    top: 15%; 
+    left: -6%;
+    height: 5%;
+    width: 6%;
+    background-color: rgb(5, 68, 3); 
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    transform: translateX(-10%) ;
+    
+}
+.experience .ston3 h6{
+    font-size: 1rem ;
+    margin-left: 5%;
+    color : rgb(44, 43, 43) ;
+}
+.experience .ston3 p{
+    margin-left: 5%;
+}
+.stone{
+    transition: all 0.2s ; 
+}
+.stone:hover{
+    transform: translateX(5%) ; 
+    background-color : rgb(244, 250, 250); 
+    box-shadow: none ;
 }
