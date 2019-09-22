@@ -83,6 +83,11 @@ body{
     width: 1%;
     left: 98%;
     top: 0 ; 
+    display: none ; 
+}
+.nav li:hover::before{
+
+    display: block ;
 }
 
 
@@ -94,6 +99,9 @@ body{
     font-size: 1rem ;
 }
 
+.active{
+    background-color : gray;  
+}
 
 /* REVIEW header content */
 header{
@@ -227,8 +235,7 @@ header .content-header{
     height: 100vh ;
     display: flex; 
     flex-direction: column ; 
-  
- 
+   
 }
 
 .title-about{
