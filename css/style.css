@@ -1082,3 +1082,44 @@ header .content-header{
     }
 
 }
+
+@media ( max-width : 1025px){
+
+    .wrapper-nav-bar::before{
+        content:  '' ; 
+        height: 20px; 
+        width: 20px; 
+        background-color : rgb(42, 219, 219) ;
+        position: absolute;
+        left: 90%;
+        top: 25% ; 
+        clip-path: polygon(0 27%, 49% 63%, 100% 27%, 100% 36%, 100% 60%, 50% 100%, 0 60%);
+        cursor: pointer;
+        
+    }
+    
+   
+    .nav{
+        top: 6vh ;
+        background-color : rgb(31, 30, 30); 
+        flex-direction: column ; 
+        height: 40vh ;
+        width: 20%; 
+        position: absolute ;
+        left: 80%; 
+    }
+
+    .nav li {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-basis: 25%;
+        border-radius: 0px;
+       
+    }
+    .nav li a{
+        position: static ; 
+    }
+
+
+}

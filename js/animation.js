@@ -8,11 +8,11 @@ var navResume = document.querySelector('.nav3') ;
 var resume = document.querySelector('.resume') ; 
 var about  = document.querySelector('.about'); 
 var home   = document.querySelector('#home'); 
+var iconDropdown =  document.querySelector(".wrapper-nav-bar::before"); 
 
+
+console.log("this is test" , iconDropdown)
 navHome.classList.add('active') ; 
-
-
-
 function navActive(nav){
 
    
