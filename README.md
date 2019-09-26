@@ -8,3 +8,6 @@ If you enjoy it , you can download and use it . no matter :3
  
 
 
+## Support me . 
+
+ [![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/gada121982)
